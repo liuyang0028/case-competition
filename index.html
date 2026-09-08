@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>交易渠电 9月「高」光案例评选</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans SC', sans-serif; background: #0a1628; }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #ffd700 0%, #ffb700 50%, #ff8c00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .page-bg {
+      background: linear-gradient(180deg, #0f2344 0%, #0a1628 40%, #071021 100%);
+    }
+    .hero-glow {
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59, 130, 246, 0.25) 0%, transparent 70%);
+    }
+    .card-glass {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+    }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .vote-active { color: #f59e0b; }
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .timeline-line {
+      position: absolute;
+      left: 20px;
+      top: 40px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, #3b82f6 0%, #1e40af 100%);
+    }
+    .category-blue {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    }
+    .category-amber {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    }
+  </style>
+</head>
+<body class="text-slate-800 min-h-screen page-bg">
+
+<!-- Hero -->
+<section class="relative overflow-hidden px-4 pt-16 pb-12 hero-glow">
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[500px] bg-blue-500/20 rounded-full blur-[140px]"></div>
+  <div class="relative max-w-5xl mx-auto text-center">
+    <div class="inline-block px-6 py-2.5 rounded-full bg-blue-500/15 border border-blue-400/30 text-blue-200 text-base tracking-widest mb-7">CASE COMPETITION · SEPTEMBER 2026</div>
+    <h1 class="text-5xl md:text-7xl font-black mb-7 text-white leading-tight tracking-tight">
+      交易渠电 <span class="gradient-text">9月「高」光案例评选</span>
+    </h1>
+    <p class="text-blue-100/80 text-xl md:text-2xl max-w-3xl mx-auto font-light">深度挖掘交易商户新签 / 运营标杆实践</p>
+  </div>
+</section>
+
+<!-- Activity Intro -->
+<section class="max-w-5xl mx-auto px-4 mb-6">
+  <div class="card-glass rounded-3xl p-7 md:p-10 shadow-xl">
+    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-5 flex items-center gap-3">
+      <span class="w-1.5 h-7 bg-blue-600 rounded-full"></span>活动介绍
+    </h2>
+    <p class="text-slate-700 leading-loose text-lg md:text-xl">
+      面向交易渠电全链路业务场景，征集在商户新签拓展、交易运维增长等领域的优秀实践案例。通过评选挖掘标杆、沉淀方法、复制经验，让高光的业务实践被看见。
+    </p>
+  </div>
+</section>
+
+<!-- Audience -->
+<section class="max-w-5xl mx-auto px-4 mb-6">
+  <div class="card-glass rounded-3xl p-7 md:p-10 shadow-xl">
+    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+      <span class="w-1.5 h-7 bg-blue-600 rounded-full"></span>面向对象
+    </h2>
+    <div class="flex flex-wrap gap-4">
+      <span class="px-5 py-2.5 rounded-full bg-blue-50 text-blue-700 text-base md:text-lg font-medium border border-blue-100">渠道经理</span>
+      <span class="px-5 py-2.5 rounded-full bg-blue-50 text-blue-700 text-base md:text-lg font-medium border border-blue-100">服务商</span>
+      <span class="px-5 py-2.5 rounded-full bg-blue-50 text-blue-700 text-base md:text-lg font-medium border border-blue-100">电销经理</span>
+      <span class="px-5 py-2.5 rounded-full bg-blue-50 text-blue-700 text-base md:text-lg font-medium border border-blue-100">电销BD</span>
+      <span class="px-5 py-2.5 rounded-full bg-blue-50 text-blue-700 text-base md:text-lg font-medium border border-blue-100">运维经理</span>
+      <span class="px-5 py-2.5 rounded-full bg-slate-50 text-slate-600 text-base md:text-lg font-medium border border-slate-100">等</span>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="max-w-5xl mx-auto px-4 mb-6">
+  <div class="card-glass rounded-3xl p-7 md:p-10 shadow-xl">
+    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+      <span class="w-1.5 h-7 bg-blue-600 rounded-full"></span>时间节奏
+    </h2>
+    <div class="relative space-y-10">
+      <div class="timeline-line"></div>
+      <div class="flex gap-5 relative">
+        <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-base font-bold shrink-0 relative z-10 shadow-lg shadow-blue-600/30">1</div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-xl md:text-2xl">案例提交</h3>
+          <p class="text-slate-500 text-base md:text-lg mt-2">9月8日 - 9月18日 24:00</p>
+        </div>
+      </div>
+      <div class="flex gap-5 relative">
+        <div class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center text-base font-bold shrink-0 relative z-10 shadow-lg shadow-emerald-500/30">2</div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-xl md:text-2xl">线上评选</h3>
+          <p class="text-slate-500 text-base md:text-lg mt-2">9月23日</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="max-w-5xl mx-auto px-4 mb-6">
+  <div class="card-glass rounded-3xl p-7 md:p-10 shadow-xl">
+    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-7 flex items-center gap-3">
+      <span class="w-1.5 h-7 bg-blue-600 rounded-full"></span>评选方向
+    </h2>
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="rounded-2xl p-7 category-blue text-white shadow-lg shadow-blue-900/30">
+        <div class="text-3xl mb-3">🚀</div>
+        <h3 class="font-bold text-2xl mb-2">商业化新签</h3>
+        <p class="text-blue-100 text-base md:text-lg">商户拓展 / 新签转化 / 模式创新</p>
+      </div>
+      <div class="rounded-2xl p-7 category-amber text-white shadow-lg shadow-amber-900/30">
+        <div class="text-3xl mb-3">📈</div>
+        <h3 class="font-bold text-2xl mb-2">交易运维增长</h3>
+        <p class="text-amber-100 text-base md:text-lg">商户运营 / 交易提升 / 增长突破</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Submit CTA -->
+<section class="max-w-5xl mx-auto px-4 mb-16 text-center">
+  <div class="relative rounded-3xl p-10 md:p-14 text-white shadow-2xl overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-white/10 rounded-full blur-[80px]"></div>
+    <div class="relative">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">高光时刻，等你书写</h2>
+      <p class="text-blue-100 text-lg md:text-xl mb-8">9月18日前准备好你的案例，提交入口已开放</p>
+      <a href="https://alidocs.dingtalk.com/notable/share/form/v01AJdl659WAgkWyOke_hERWDMS_U0Hn3kT" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-white text-blue-700 font-bold px-10 py-5 rounded-2xl text-lg hover:shadow-xl transition transform hover:scale-[1.02]">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+        提交案例
+      </a>
+      <p class="text-blue-200/80 text-sm mt-5">若仍跳转管理视图，说明当前账号是表单创建者，可换一名同事或无痕模式验证填报页。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Wall -->
+<section id="wall" class="max-w-6xl mx-auto px-4 py-14 border-t border-blue-800/50">
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-bold text-white">高光案例墙</h2>
+      <p class="text-blue-200/70 text-base mt-2">当前展示为示例数据，正式上线后将接入钉钉表格实时同步</p>
+    </div>
+    <div class="flex gap-3 overflow-x-auto hide-scrollbar pb-1">
+      <button onclick="filterWall('all')" class="filter-btn active px-5 py-2.5 rounded-full bg-blue-600 text-white text-base font-medium whitespace-nowrap" data-filter="all">全部</button>
+      <button onclick="filterWall('commercial')" class="filter-btn px-5 py-2.5 rounded-full bg-blue-900/50 border border-blue-700/50 text-blue-100 text-base font-medium whitespace-nowrap hover:bg-blue-800/50" data-filter="commercial">商业化新签</button>
+      <button onclick="filterWall('operation')" class="filter-btn px-5 py-2.5 rounded-full bg-blue-900/50 border border-blue-700/50 text-blue-100 text-base font-medium whitespace-nowrap hover:bg-blue-800/50" data-filter="operation">交易运维增长</button>
+    </div>
+  </div>
+  <div id="wallGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Cards rendered by JS -->
+  </div>
+  <div id="emptyWall" class="hidden text-center py-20 text-blue-200/60">
+    <p class="text-lg">暂无可展示案例</p>
+  </div>
+</section>
+
+<!-- Detail Modal -->
+<div id="detailModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/70 backdrop-blur-sm">
+  <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+    <div class="relative h-56">
+      <img id="modalCover" src="" class="w-full h-full object-cover" alt="">
+      <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-slate-600 hover:bg-white transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div class="p-8">
+      <div class="flex items-center gap-2 mb-4">
+        <span id="modalCategory" class="px-3 py-1 rounded-full text-xs font-medium"></span>
+        <span id="modalTeam" class="text-slate-400 text-xs"></span>
+      </div>
+      <h3 id="modalTitle" class="text-2xl font-bold text-slate-900 mb-6"></h3>
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-sm font-bold text-slate-900 mb-2">案例背景与痛点</h4>
+          <p id="modalBackground" class="text-slate-600 text-sm leading-relaxed"></p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-slate-900 mb-2">关键做法与亮点</h4>
+          <p id="modalPractice" class="text-slate-600 text-sm leading-relaxed"></p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-slate-900 mb-2">核心数据结果</h4>
+          <p id="modalResult" class="text-slate-600 text-sm leading-relaxed"></p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-100">
+        <div class="text-sm text-slate-500">提交人：<span id="modalSubmitter"></span></div>
+        <button id="modalVoteBtn" class="flex items-center gap-1.5 text-sm text-slate-400 hover:text-amber-500 transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/></svg>
+          <span id="modalVotes"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="border-t border-blue-800/50 bg-[#071021] py-10">
+  <div class="max-w-6xl mx-auto px-4 text-center text-blue-300/60 text-base">
+    <p>交易渠电 9月「高」光案例评选 · 提交与审核通过钉钉 AI 表格管理</p>
+  </div>
+</footer>
+
+<script>
+let cases = [
+  {
+    id: 1,
+    title: '某火锅品牌新店开业30天GMV破百万',
+    category: 'commercial',
+    submitter: '张三',
+    team: '交易武汉一部',
+    background: '商户开业初期流量不足，缺乏本地曝光，周边竞争激烈。',
+    practice: '通过智能体+顶展组合打法，精准触达周边3公里用户，叠加新客满减策略。',
+    result: '30天GMV 120万，新客占比65%，门店热度进入区域前10。',
+    cover: 'https://images.unsplash.com/photo-1555126634-323283e090fa?w=800&auto=format&fit=crop',
+    status: 'approved',
+    votes: 12
+  },
+  {
+    id: 2,
+    title: '饮品连锁品牌会员复购提升40%',
+    category: 'operation',
+    submitter: '李四',
+    team: '交易成都二部',
+    background: '老客复购率低，会员活跃度不足，促销触达转化率差。',
+    practice: '搭建会员分层运营体系，结合 push 精准召回和限时积分兑换。',
+    result: '三个月复购率从22%提升至31%，会员月活增长40%。',
+    cover: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800&auto=format&fit=crop',
+    status: 'approved',
+    votes: 8
+  },
+  {
+    id: 3,
+    title: '烧烤店淡季逆袭：工作日套餐策略',
+    category: 'operation',
+    submitter: '王五',
+    team: '交易武汉三部',
+    background: '工作日客流明显下降，午市几乎空置，租金压力大。',
+    practice: '设计工作日双人套餐，搭配限时秒杀和社群预热。',
+    result: '工作日订单增长55%，午市翻台率提升2轮。',
+    cover: 'https://images.unsplash.com/photo-1529193591184-b1d580690dd0?w=800&auto=format&fit=crop',
+    status: 'approved',
+    votes: 5
+  }
+];
+
+let currentFilter = 'all';
+let votedIds = new Set();
+let currentDetailId = null;
+
+const categoryMap = {
+  commercial: '商业化新签',
+  operation: '交易运维增长'
+};
+
+const categoryClass = {
+  commercial: 'bg-amber-50 text-amber-600 border border-amber-100',
+  operation: 'bg-blue-50 text-blue-600 border border-blue-100'
+};
+
+function filterWall(filter) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    if (btn.dataset.filter === filter) {
+      btn.classList.add('bg-blue-600', 'text-white');
+      btn.classList.remove('bg-blue-900/50', 'border', 'border-blue-700/50', 'text-blue-100');
+    } else {
+      btn.classList.remove('bg-blue-600', 'text-white');
+      btn.classList.add('bg-blue-900/50', 'border', 'border-blue-700/50', 'text-blue-100');
+    }
+  });
+  renderWall();
+}
+
+function renderWall() {
+  const grid = document.getElementById('wallGrid');
+  const empty = document.getElementById('emptyWall');
+  const visible = cases.filter(c => c.status === 'approved' && (currentFilter === 'all' || c.category === currentFilter));
+  if (visible.length === 0) {
+    grid.innerHTML = '';
+    empty.classList.remove('hidden');
+    return;
+  }
+  empty.classList.add('hidden');
+  grid.innerHTML = visible.map(c => `
+    <div class="bg-white rounded-2xl overflow-hidden card-hover transition duration-300 shadow-xl shadow-black/20 border border-slate-100 cursor-pointer" onclick="openModal(${c.id})">
+      <div class="h-48 overflow-hidden">
+        <img src="${c.cover}" class="w-full h-full object-cover" alt="">
+      </div>
+      <div class="p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-full text-xs font-medium ${categoryClass[c.category]}">
+            ${categoryMap[c.category]}
+          </span>
+          <span class="text-slate-400 text-xs">${c.team}</span>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2 line-clamp-2">${c.title}</h3>
+        <p class="text-slate-500 text-sm line-clamp-2 mb-4">${c.practice}</p>
+        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+          <div class="text-sm text-slate-500">${c.submitter}</div>
+          <div class="flex items-center gap-1.5 text-sm ${votedIds.has(c.id) ? 'vote-active' : 'text-slate-400'}">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/></svg>
+            <span>${c.votes + (votedIds.has(c.id) ? 1 : 0)}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openModal(id) {
+  const c = cases.find(x => x.id === id);
+  if (!c) return;
+  currentDetailId = id;
+  document.getElementById('modalCover').src = c.cover;
+  document.getElementById('modalCategory').textContent = categoryMap[c.category];
+  document.getElementById('modalCategory').className = `px-3 py-1 rounded-full text-xs font-medium ${categoryClass[c.category]}`;
+  document.getElementById('modalTeam').textContent = c.team;
+  document.getElementById('modalTitle').textContent = c.title;
+  document.getElementById('modalBackground').textContent = c.background;
+  document.getElementById('modalPractice').textContent = c.practice;
+  document.getElementById('modalResult').textContent = c.result;
+  document.getElementById('modalSubmitter').textContent = c.submitter;
+  document.getElementById('modalVotes').textContent = c.votes + (votedIds.has(c.id) ? 1 : 0);
+  updateModalVoteBtn();
+  document.getElementById('detailModal').classList.remove('hidden');
+  document.getElementById('detailModal').classList.add('flex');
+}
+
+function closeModal() {
+  document.getElementById('detailModal').classList.add('hidden');
+  document.getElementById('detailModal').classList.remove('flex');
+  currentDetailId = null;
+}
+
+function updateModalVoteBtn() {
+  const btn = document.getElementById('modalVoteBtn');
+  const c = cases.find(x => x.id === currentDetailId);
+  if (!c) return;
+  const active = votedIds.has(c.id);
+  btn.className = `flex items-center gap-1.5 text-sm transition ${active ? 'vote-active' : 'text-slate-400 hover:text-amber-500'}`;
+  document.getElementById('modalVotes').textContent = c.votes + (active ? 1 : 0);
+}
+
+document.getElementById('modalVoteBtn').addEventListener('click', function(e) {
+  e.stopPropagation();
+  const c = cases.find(x => x.id === currentDetailId);
+  if (!c) return;
+  if (votedIds.has(c.id)) {
+    votedIds.delete(c.id);
+  } else {
+    votedIds.add(c.id);
+  }
+  updateModalVoteBtn();
+  renderWall();
+});
+
+// Close modal on backdrop click
+document.getElementById('detailModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+renderWall();
+</script>
+</body>
+</html>
