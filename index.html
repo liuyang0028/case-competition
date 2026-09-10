@@ -172,7 +172,7 @@
   <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
     <div>
       <h2 class="text-2xl md:text-3xl font-bold text-white">高光案例墙</h2>
-      <p class="text-blue-200/70 text-base mt-2">当前展示为示例数据，案例提交后将次日同步展示在此</p>
+      <p class="text-blue-200/70 text-base mt-2">9月「高」光案例评选入围案例</p>
     </div>
     <div class="flex gap-3 overflow-x-auto hide-scrollbar pb-1">
       <button onclick="filterWall('all')" class="filter-btn active px-5 py-2.5 rounded-full bg-blue-600 text-white text-base font-medium whitespace-nowrap" data-filter="all">全部</button>
@@ -216,6 +216,12 @@
           <h4 class="text-sm font-bold text-slate-900 mb-2">核心数据结果</h4>
           <p id="modalResult" class="text-slate-600 text-sm leading-relaxed"></p>
         </div>
+        <div>
+          <a id="modalPosterLink" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 hover:text-blue-700">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            查看完整海报
+          </a>
+        </div>
       </div>
       <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-100">
         <div class="text-sm text-slate-500">提交人：<span id="modalSubmitter"></span></div>
@@ -238,43 +244,60 @@
 <script>
 let cases = [
   {
-    id: 1,
-    title: '某火锅品牌新店开业30天GMV破百万',
-    category: 'commercial',
-    submitter: '张三',
-    team: '交易武汉一部',
-    background: '商户开业初期流量不足，缺乏本地曝光，周边竞争激烈。',
-    practice: '通过智能体+顶展组合打法，精准触达周边3公里用户，叠加新客满减策略。',
-    result: '30天GMV 120万，新客占比65%，门店热度进入区域前10。',
-    cover: 'https://images.unsplash.com/photo-1555126634-323283e090fa?w=800&auto=format&fit=crop',
-    status: 'approved',
-    votes: 12
+    "id": 1,
+    "title": "五星门店成长案例",
+    "category": "commercial",
+    "submitter": "陈哲",
+    "team": "交易武汉一部",
+    "background": "未合作过商业化新户，入驻前（6月）· 商户原状 3.9低评分白板门店，无榜单无高流量，生意平淡。 用户看不到，搜不着，更不谈转化。",
+    "practice": "优化门店素材，五连图，推荐菜。达成五星门店基础的流量倾斜。 推广通接入，同步引导暑期专场的红包补贴。 结合商家所在地区特性，投放计划主要做用户到店及特定时间段。效果倍增。",
+    "result": "合作两月后（8月）· 成效 评分升至4.5，入围榜单第5名，套餐下架、专做到店。",
+    "cover": "images/case-1-cover.png",
+    "poster": "posters/case-poster-1.png",
+    "status": "approved",
+    "votes": 0
   },
   {
-    id: 2,
-    title: '饮品连锁品牌会员复购提升40%',
-    category: 'operation',
-    submitter: '李四',
-    team: '交易成都二部',
-    background: '老客复购率低，会员活跃度不足，促销触达转化率差。',
-    practice: '搭建会员分层运营体系，结合 push 精准召回和限时积分兑换。',
-    result: '三个月复购率从22%提升至31%，会员月活增长40%。',
-    cover: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800&auto=format&fit=crop',
-    status: 'approved',
-    votes: 8
+    "id": 2,
+    "title": "服务破冰·信任重建·顶展破局案例",
+    "category": "commercial",
+    "submitter": "陈哲",
+    "team": "交易武汉一部",
+    "background": "湖北 · 随州 · 中餐 · 顶展 —— 历史合作效果不佳，用服务破冰赢回信任。 客户背景：25年10月0元商户通入驻；今年1月做获客宝5000，效果比较差；商户主做抖音平台，店铺+直播。 核心痛点：历史商业化合作效果不佳，信任感低，不愿意再做高德。 门店数据，也无核销。",
+    "practice": "沟通过程 · 服务破冰三步走 1. 先服务不推品 —— 客户抵触时不推产品，从团购服务、差评处理切入，重建沟通通道 2. 服务换信任 —— 及时排解差评、配合直播节奏，用响应速度换回信任 3. 顺势推顶展 —— 月初节点切入，借\"本月折扣、下月恢复原价\"的算账逻辑推顶展 破冰逻辑：客户抵触时不推产品，先用团购、差评处理把服务做透 —— 三天内，客户从\"效果不理想\"变成主动问\"怎么冲、怎么推\"。信任回来了，顶展才推得动。 步骤2 · 双方案引导 —— 做湖北菜/中餐两套方案，先报原价锚定，主动推荐高性价比选项，把\"做不做\"变成\"做哪个\" 步骤3 · 再被拒重换角度再切入 —— 不纠缠不重复，隔天用\"同类案例+八折政策\"重触达；客户开始问词包、问优惠，就是到了临界点 方案给选择 · 被拒换角度 —— 案例建信任、折扣造紧迫感。 步骤4 · 默认成交式催款 —— 不问\"打不打款\"，借开票、财务认款、占排期等服务话题侧面推进；把催款变成推进流程，客户顺着节奏走，打款水到渠成；成交后持续跟进服务，商户状元榜在线、扫街榜第一 完整链路：服务建信任 → 方案给选择 → 被拒换角度 → 案例+折扣激活 → 效果答疑下决心 → 默认成交式催款 最终成交，中餐顶展",
+    "result": "对接思路 从客户抵触到成交 · 同类客户可复用的对接打法。 服务切入 · 客户抵触时不推产品 ● 差评浏览量：影响顾客决策到店，拉低评分 ● 团购、装修：影响门店增收与流量倾斜 ● 周边竞品对比：新店讲评分低曝光差，老店讲转化，经营分析切入 效果疑虑 · 用数据说话 ● 同行优质案例参考 ● 给老板算账：投入产出比，效果看得见 对接思路：服务切入重建信任，案例+算账打消疑虑 —— 把抵触谈成成交。  商户到8月，连续入围状元榜门店，且广告开投期间，核销GMV，从0到3W只用1周。",
+    "cover": "images/case-2-cover.png",
+    "poster": "posters/case-poster-2.png",
+    "status": "approved",
+    "votes": 0
   },
   {
-    id: 3,
-    title: '烧烤店淡季逆袭：工作日套餐策略',
-    category: 'operation',
-    submitter: '王五',
-    team: '交易武汉三部',
-    background: '工作日客流明显下降，午市几乎空置，租金压力大。',
-    practice: '设计工作日双人套餐，搭配限时秒杀和社群预热。',
-    result: '工作日订单增长55%，午市翻台率提升2轮。',
-    cover: 'https://images.unsplash.com/photo-1529193591184-b1d580690dd0?w=800&auto=format&fit=crop',
-    status: 'approved',
-    votes: 5
+    "id": 3,
+    "title": "扫街榜到店转化案例",
+    "category": "operation",
+    "submitter": "刘易诚",
+    "team": "东莞一橙文化",
+    "background": "本商户已经上了高德扫街榜状元版，但是没有上团购核销，目前没有和讯手系统打通",
+    "practice": "目前广告Cpc陆续投放",
+    "result": "到店成本非常低",
+    "cover": "images/case-3-cover.png",
+    "poster": "posters/case-poster-3.png",
+    "status": "approved",
+    "votes": 0
+  },
+  {
+    "id": 4,
+    "title": "Shake Shack 开机屏投放案例",
+    "category": "commercial",
+    "submitter": "张冉",
+    "team": "无锡时义信息科技有限公司",
+    "background": "Shake Shack为高端潮流快餐品牌，核心深耕北上广深等一线城市市场，主打高线城市年轻、高消费力客群。本次与我方签约10万元高德开机屏广告，用于门店、商圈附近精准引流。 品牌在其他平台的投放存在传统泛流量曝光低效，无法精准触达门店周边就近到店客群；缺乏出行场景曝光，用户种草后到店链路弱，门店客流不稳定的问题",
+    "practice": "针对门店周边核心圈层人群投放，并且通过高德人群塔台锁定投放人群，杜绝无效曝光，大幅度提升投放精准度，同时绑定高德导航出行场景，打通“广告曝光-就近搜店-到店消费”链路，有效带动门店线下客流。",
+    "result": "8月首轮投放实现上海门店周边精准圈层曝光，有效填补品牌线下场景流量空白，本地品牌渗透率显著提升",
+    "cover": "images/case-4-cover.png",
+    "poster": "posters/case-poster-4.png",
+    "status": "approved",
+    "votes": 0
   }
 ];
 
@@ -354,6 +377,7 @@ function openModal(id) {
   document.getElementById('modalBackground').textContent = c.background;
   document.getElementById('modalPractice').textContent = c.practice;
   document.getElementById('modalResult').textContent = c.result;
+  document.getElementById('modalPosterLink').href = c.poster;
   document.getElementById('modalSubmitter').textContent = c.submitter;
   document.getElementById('modalVotes').textContent = c.votes + (votedIds.has(c.id) ? 1 : 0);
   updateModalVoteBtn();
